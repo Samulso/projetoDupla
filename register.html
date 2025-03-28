@@ -3,30 +3,43 @@
     <header>
         <meta charset="UTF-8">
         <title>Cadastro</title>
-        <link rel="stylesheet" href="cadastro.css">
+        <link rel="stylesheet" href="assets\css\pages\register\register.css">
+        <script src="assets\js\register.js" defer></script>
     </header>
     <body>
 
         <div class="container">
-            <h2>Cadastro</h2>
+            <div class="logo">
+                <img src="assets\images\logo.jpg" >
+            </div>
 
-            <label for="name">Nome completo</label>
-            <input type="text" id="name" required placeholder="Digite nome">
+                <div class="form-card">
+                    <h1>Cadastro</h1>
+                        <form id="register-form">
+                            <div class="input-group">
 
-            <label for="email">E-mail</label>
-            <input type="email" id="email" name="email" required placeholder="Digite email">
+                                <label for="name">Nome completo:</label>
+                                <input type="text" id="name" required placeholder="Digite nome">
 
-            <label for="password" id="password">Senha</label>
-            <input type="passoword" id="passoword" name="senha" required placeholder="Digite sua senha">
+                                <label for="email">E-mail:</label>
+                                <input type="email" id="email" name="email" required placeholder="Digite email">
 
-            <label for="confimarsenha">Confimar senha</label>
-            <input type="password" id="confimarsenha" name="confimaesenha" required placeholder="Confimar senha">
-         <a href="login.html">
-            <button type="submit">Cadastrar</button>
-            </a>
+                                <label for="password" id="password">Senha:</label>
+                                <input type="passoword" id="passoword" name="senha" required placeholder="Digite sua senha">
 
-         <p>Já possui conta? <a href="http://127.0.0.1:3000/pagLogin/login.html">Clique aqui para fazer login</a>
+                                <label for="confimarsenha">Confimar senha:</label>
+                                <input type="password" id="confimarsenha" name="confimaesenha" required placeholder="Confimar senha">
+                            
+                            </div>
 
+                                <button type="submit" class="btn">Cadastrar</button>        
+                            
+                                <p class="login-true">
+                                    <span>Já possui conta? </span> <a href="login.html">Clique aqui para fazer login</a>
+                                </p>
+                           
+                </form>
+            
         </div>
     </body>
 </html>
