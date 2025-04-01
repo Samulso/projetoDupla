@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="assets\css\pages\register2\register_2.css">
+    <script src="assets\js\register_2.js"></script>
+</head>
+<body>
+    <div class="container">
+
+            <div class="progress-container">
+                <div class="step"></div>
+                <div class="step active"></div>
+            </div>
+
+        <div class="logo">
+            <img src="assets\images\logo.jpg">
+        </div>
+        
+        <div class="form-card">
+
+            <h1>Cadastro</h1>
+            <form id="register-form">
+
+                <div class="input-group">
+
+                    <label for="data_nascimento">Insira sua data de nascimento: </label>
+                    <input type="date" name="data_nascimento" id="data_nascimento" required>
+
+                    <label for="peso">Insira seu peso: </label>
+                    <input type="number" name="peso" id="peso" required>
+
+                    <label for="altura">insira sua altura (cm): </label>
+                    <input type="number" name="altura" id="altura">
+
+                    <select name="objetivo_nutricional" id="objetivo_nutricional">
+                        
+                        <option value="" selected disabled>Escolha:</option>
+                        <option value="perda_peso">Perda de peso</option>
+                        <option value="ganho_massa">Ganho de massa</option>
+                        <option value="manter_saude">Manter a saúde</option>
+
+                    </select>
+
+                <div class="restricoes-label-group">
+
+                    <label for="restricoes">Voce possui alguma restrição alimentar?</label>
+                    <input type="radio" id="nao_restricao" name="opcao_restricao" value="1" checked>
+                    <label for="nao_restricao">Não possuo</label>
+
+                    <input type="radio" id="sim_restricao" name="opcao_restricao" value="2">
+                    <label for="sim_restricao">Possuo</label>
+
+                    <input type="text" id="restricao" placeholder="insira sua(s) restrição(es):">
+
+                </div>
+
+                <div class="freq-exercicio">
+
+                    <label for="freq_exercicio">Com que frequência você se exercita?</label>
+                    <input type="radio" name="opcao_freq" id="n_exercito" value="1" checked>
+                    <label for="n_exercito">Não me exercito nenhuma vez na semana</label>
+
+                    <input type="radio" name="opcao_freq" id="exc_op1" value="2">
+                    <label for="exc_op1">De uma a duas vezes na semana</label>
+                    
+                    <input type="radio" name="opcao_freq" id="exc_op2" value="3">
+                    <label for="exc_op2">De três a cinco vezes na semana</label>
+                   
+                    <input type="radio" name="opcao_freq" id="exc_op3" value="4">
+                    <label for="exc_op3">De seis a sete vezes na semana</label>
+
+                </div>
+
+                <div class="cond-medicas">
+
+                    <input type="radio" id="nao_cond" name="opcao_cond" value="2">
+                    <label for="nao_cond">Não possuo</label>
+
+                    <label for="restricoes">Voce possui alguma condição médica relevante?</label>
+                    <input type="radio" id="sim_cond" name="opcao_cond" value="1" checked>
+                    <label for="sim_cond">Possuo</label>
+
+                    <input type="text" id="condicao" placeholder="ex: diabetes, hipertensão, etc.">
+
+                </div>
+
+                <div class="consumo-agua">
+
+                    <label for="consumo_agua">Qual seu consumo medio de água por dia?</label>
+                    <select name="consumo_agua_dia" id="consumo_agua_dia">
+                        <option value="" selected disabled>Escolha:</option>
+                        <option value="n_a">Não sei</option>
+                        <option value="baixo">Baixo (máximo 700-1000ml)</option>
+                        <option value="medio">Médio (de 1000ml a 2500ml)</option>
+                        <option value="alto">Alto (acima de 2500ml)</option>
+
+                    </select>
+                </div>
+                
+                <div class="btn-submit">
+                    <button class="submit" id="btn_sbmt">Cadastrar</button>
+                </div>
+
+                <div class="imprt">
+                    
+                    <p>Estas informações irão nos ajudar a fornecer recomendações mais precisas para sua alimentação!</p>
+                </div>
+
+
+
+
+
+                </div>
+            </form>
+
+        </div>
+    </div>
+    
+</body>
+</html>
