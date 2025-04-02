@@ -3,48 +3,44 @@
     <meta charset="UTF-8">
     <title>Cadastro</title>
     <link rel="stylesheet" href="assets\css\pages\register\register.css">
-    <script src="assets\js\register.js" defer></script>
+    <script src="register.js" defer></script>
 
 <body>
+        <div class="container">
+            <div class="logo">
+                <img src="assets\images\logo.jpg">
+            </div>
 
-    <div class="container">
-        <div class="logo">
-            <img src="assets\images\logo.jpg">
-        </div>
+            <div class="form-card">
+                <h1>Cadastro</h1>
+                <form id="register-form">
+                    <div class="input-group">
 
-        <div class="form-card">
+                        <label for="name">Nome completo:</label>
+                        <input type="text" id="name" required placeholder="Digite nome">
 
-            <h1>Cadastro</h1>
-            <form id="register-form">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required placeholder="Digite email">
 
-                <div class="input-group">
+                        <label for="password">Senha:</label>
+                        <input type="password" id="password" name="password" required placeholder="Digite sua senha">
 
-                    <label for="name">Nome completo:</label>
-                    <input type="text" id="name" required placeholder="Digite nome">
-
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" required placeholder="Digite email">
-
-                    <label for="password">Senha:</label>
-                    <input type="password" id="password" name="password" required placeholder="Digite sua senha">
-
-                    <label for="confimarsenha">Confimar senha:</label>
-                    <input type="password" id="confirm-password" name="confirm-password" required placeholder="Confimar senha">
-
-                </div>
-
-                <button type="button" class="btn" onclick="window.location.href='register_2.html'">Próximo</button>
-
-                <p class="login-true">
-
-                    <span>Já possui conta? </span> <a href="login.html">Clique aqui para fazer login</a>
+                        <label for="confimarsenha">Confimar senha:</label>
+                        <input type="password" id="confirm-password" name="confirm-password" required placeholder="Confimar senha">
                     
-                </p>
+                    </div>
 
-            </form>
+                    <button type="submit" class="btn">Próximo</button>
+                    <p class="login-true">
+                        <span>Já possui conta? </span> <a href="login.html">Clique aqui para fazer login</a>
+                    </p>
+
+                </form>
+
+            </div>
 
         </div>
 
     </body>
-    
+
 </html>

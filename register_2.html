@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
     <link rel="stylesheet" href="assets\css\pages\register2\register_2.css">
-    <script src="assets\js\register_2.js"></script>
+    <script src="register_2.js"></script>
 </head>
 <body>
     <div class="container">
@@ -34,8 +34,11 @@
 
                     <label for="altura">insira sua altura (cm): </label>
                     <input type="number" name="altura" id="altura">
-
-                    <select name="objetivo_nutricional" id="objetivo_nutricional">
+                
+                <div class="objetivo-nutricional">
+                    <label for="objetivo_nutricional">Qual é o seu objetivo?</label>
+                    
+                        <select name="objetivo_nutricional" id="objetivo_nutricional">
                         
                         <option value="" selected disabled>Escolha:</option>
                         <option value="perda_peso">Perda de peso</option>
@@ -43,6 +46,7 @@
                         <option value="manter_saude">Manter a saúde</option>
 
                     </select>
+                </div>
 
                 <div class="restricoes-label-group">
 
@@ -76,11 +80,12 @@
 
                 <div class="cond-medicas">
 
-                    <input type="radio" id="nao_cond" name="opcao_cond" value="2">
+                    <label for="restricoes">Voce possui alguma condição médica relevante?</label>
+                    <input type="radio" id="nao_cond" name="opcao_cond" value="2" checked>
                     <label for="nao_cond">Não possuo</label>
 
-                    <label for="restricoes">Voce possui alguma condição médica relevante?</label>
-                    <input type="radio" id="sim_cond" name="opcao_cond" value="1" checked>
+                    
+                    <input type="radio" id="sim_cond" name="opcao_cond" value="1" >
                     <label for="sim_cond">Possuo</label>
 
                     <input type="text" id="condicao" placeholder="ex: diabetes, hipertensão, etc.">
